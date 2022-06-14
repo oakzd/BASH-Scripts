@@ -4,11 +4,11 @@
 
 # Generate a random password using digits
 MY_RANDOM_PASSWORD=${RANDOM}
-echo "Hi there your random password is: ${MY_RANDOM_PASSWORD=$}"
+echo "Hi there your random password is: ${MY_RANDOM_PASSWORD}"
 
 # Generate a random password using digits three times in a row
 THREE_RANDOM_PASSWORD=${RANDOM}${RANDOM}${RANDOM}
-echo "Hi there your random password is: ${THREE_RANDOM_PASSWORD=$}"
+echo "Hi there your random password is: ${THREE_RANDOM_PASSWORD}"
 
 # Use the current time to generate a password
 CURRENT_DATE_PW=$(date +%s)
@@ -28,6 +28,7 @@ echo "We are using Random command on date command to generate a password: ${SHA2
 
 # Append a special character to last generated password
 RANDOM_SPECIAL_CHAR='!@#$%^&*()_+={}[]:/<>,.'
-NEW_RANDOM_CHAR_PW=$(echo ${RANDOM_SPECIAL_CHAR} | fold -w1 | shuf | head -c1)
-echo "Your random special character password is: ${SHA256SUM_PW}${NEW_RANDOM_CHAR_PW}"
+NEW_RANDOM_CHAR_PW_1=$(echo ${RANDOM_SPECIAL_CHAR} | fold -w2 | shuf | tail -c2)
+NEW_RANDOM_CHAR_PW_2=$(echo ${RANDOM_SPECIAL_CHAR} | fold -w2 | shuf | head -c2)
+echo "Your random special character password is: ${NEW_RANDOM_CHAR_PW_1}${SHA256SUM_PW}${NEW_RANDOM_CHAR_PW_2}"
 
