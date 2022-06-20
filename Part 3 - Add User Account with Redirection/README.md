@@ -1,4 +1,4 @@
-# This project creates a User Account
+# This project implements redirection with creating a User Account
 
 Breakdown of the project
 
