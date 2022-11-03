@@ -1,4 +1,5 @@
-# This script prints directories in a nicer format.
+This script prints directories in a nicer format.
+===
 
 To give a breakdown of the project
 
@@ -15,4 +16,8 @@ To give a breakdown of the project
 
 * System Admins who have tons of directories to parse through
 * Anyone!
+
+
+**How it is displayed**
+![usecase](./images/diagram.png)
 
