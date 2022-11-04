@@ -20,4 +20,4 @@ To give a breakdown of the project
 
 **How it is displayed**
 
-![usecase](./images/diagram.png)
+![usecase](./images/example.png)
